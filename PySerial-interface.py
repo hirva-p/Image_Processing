@@ -1,5 +1,6 @@
+# This code was used to generate the image from the text file.
+# This code was run on the Google Colab platform.
 import serial
-# import numpy as np
 
 width = 234; #set width and height 
 height = 211; 
