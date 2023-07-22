@@ -1,0 +1,815 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Nov 21 11:38:01 2022
+# Process ID: 7968
+# Current directory: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8244 D:\code\latest_code\implementation_running\final_code_nexys\final_code_nexys\final_code_nexys.xpr
+# Log file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/vivado.log
+# Journal file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/DS_LAB/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:15 . Memory (MB): peak = 923.918 ; gain = 267.820
+reset_run Bram_mem_blk_mem_gen_0_0_synth_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 11:39:22 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 11:39:23 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1033.379 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 11:41:17 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 11:41:17 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 11:53:21 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+Bram_mem_blk_mem_gen_0_0_synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 11:53:21 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1033.379 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+open_hw_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2268.438 ; gain = 1235.059
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE73A
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE73A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE73A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE73A
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:16:43 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 12:16:43 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:20:11 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 12:20:11 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:23:57 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+Bram_mem_blk_mem_gen_0_0_synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 12:23:57 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2586.055 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.201 . Memory (MB): peak = 3186.039 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.201 . Memory (MB): peak = 3186.039 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3186.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 3319.141 ; gain = 1001.219
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:32:25 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 12:32:26 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:36:05 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 12:36:06 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:37:48 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Mon Nov 21 12:37:48 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:40:13 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+Bram_mem_blk_mem_gen_0_0_synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 12:40:13 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run Bram_mem_blk_mem_gen_0_0_synth_1
+launch_runs Bram_mem_blk_mem_gen_0_0_synth_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Mon Nov 21 12:50:52 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:52 ; elapsed = 00:01:18 . Memory (MB): peak = 3424.996 ; gain = 14.453
+wait_on_run Bram_mem_blk_mem_gen_0_0_synth_1
+[Mon Nov 21 12:50:52 2022] Waiting for Bram_mem_blk_mem_gen_0_0_synth_1 to finish...
+[Mon Nov 21 12:50:57 2022] Waiting for Bram_mem_blk_mem_gen_0_0_synth_1 to finish...
+[Mon Nov 21 12:51:02 2022] Waiting for Bram_mem_blk_mem_gen_0_0_synth_1 to finish...
+[Mon Nov 21 12:51:07 2022] Waiting for Bram_mem_blk_mem_gen_0_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log Bram_mem_blk_mem_gen_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Bram_mem_blk_mem_gen_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Bram_mem_blk_mem_gen_0_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f.
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 12:51:04 2022...
+[Mon Nov 21 12:51:07 2022] Bram_mem_blk_mem_gen_0_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3424.996 ; gain = 0.000
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/bd/Bram_mem/Bram_mem.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 3424.996 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 151 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.192 . Memory (MB): peak = 3424.996 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.192 . Memory (MB): peak = 3424.996 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 3569.758 ; gain = 144.762
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Mon Nov 21 12:52:28 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 12:52:28 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 21 12:56:06 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 4102.031 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+file mkdir D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/DS_LAB/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/Bram_mem_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/design_1_blk_mem_gen_0_0.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/ip/Bram_mem_blk_mem_gen_0_0/sim/Bram_mem_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bram_mem_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/sim/Bram_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bram_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bram_mem_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_sobel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sobel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_top_bram
+INFO: [VRFC 10-2458] undeclared symbol o_TX_Active, assumed default net type wire [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xelab -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/DS_LAB/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sobel
+Compiling module xil_defaultlib.UART_TX
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.Bram_mem_blk_mem_gen_0_0
+Compiling module xil_defaultlib.Bram_mem
+Compiling module xil_defaultlib.Bram_mem_wrapper
+Compiling module xil_defaultlib.image_top_bram
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov 21 13:16:34 2022. For additional details about this file, please refer to the WebTalk help file at D:/DS_LAB/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 21 13:16:34 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 4202.641 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -protoinst "protoinst_files/Bram_mem.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/Bram_mem.protoinst
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.testcase.bram1.Bram_mem_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 4223.266 ; gain = 20.625
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench/testcase/o_pixels}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench/testcase/state}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/testbench/testcase/o_TX_Done}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 4223.266 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/DS_LAB/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/Bram_mem_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/design_1_blk_mem_gen_0_0.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xelab -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/DS_LAB/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/Bram_mem.protoinst
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.testcase.bram1.Bram_mem_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 4223.266 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/DS_LAB/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/Bram_mem_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/design_1_blk_mem_gen_0_0.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xelab -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/DS_LAB/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/Bram_mem.protoinst
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.testcase.bram1.Bram_mem_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 4223.266 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 4223.266 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/DS_LAB/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/Bram_mem_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/design_1_blk_mem_gen_0_0.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/ip/Bram_mem_blk_mem_gen_0_0/sim/Bram_mem_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bram_mem_blk_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/sim/Bram_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bram_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Bram_mem_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_TX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_sobel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv_sobel
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_top_bram
+INFO: [VRFC 10-2458] undeclared symbol o_TX_Active, assumed default net type wire [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:55]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim'
+"xelab -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/DS_LAB/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sobel
+Compiling module xil_defaultlib.UART_TX
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.Bram_mem_blk_mem_gen_0_0
+Compiling module xil_defaultlib.Bram_mem
+Compiling module xil_defaultlib.Bram_mem_wrapper
+Compiling module xil_defaultlib.image_top_bram
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4223.266 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4223.266 ; gain = 0.000
+Vivado Simulator 2019.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/Bram_mem.protoinst
+Time resolution is 1 ps
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.testcase.bram1.Bram_mem_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 4223.266 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module testbench.testcase.bram1.Bram_mem_i.blk_mem_gen_0.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 4223.266 ; gain = 0.000
+launch_runs synth_1 -jobs 4
+[Mon Nov 21 13:29:48 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Nov 21 13:31:10 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/bd/Bram_mem/Bram_mem.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4223.266 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 4223.266 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 4223.266 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 4223.266 ; gain = 0.000
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 21 13:33:36 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-10:58:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 4344.621 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8AE72A
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/image_top_bram.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+set_property top conv_sobel [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 21 14:12:01 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 14:12:01 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 21 14:16:39 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 14:16:39 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Nov 21 14:18:39 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Mon Nov 21 14:18:39 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+save_wave_config {D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/testbench_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/testbench_behav.wcfg
+set_property xsim.view D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/testbench_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 4360.203 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 14:30:16 2022...

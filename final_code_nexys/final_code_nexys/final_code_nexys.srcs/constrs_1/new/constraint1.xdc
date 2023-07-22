@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN H17 [get_ports completed]
+set_property PACKAGE_PIN E3 [get_ports clk]
+set_property PACKAGE_PIN D4 [get_ports o_TX_Serial]
+set_property PACKAGE_PIN J15 [get_ports r_ctrl]
+set_property IOSTANDARD LVCMOS33 [get_ports r_ctrl]
+set_property IOSTANDARD LVCMOS33 [get_ports o_TX_Serial]
+set_property IOSTANDARD LVCMOS33 [get_ports completed]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]

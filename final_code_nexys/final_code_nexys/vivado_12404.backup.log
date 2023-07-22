@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov 20 20:53:14 2022
+# Process ID: 12404
+# Current directory: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10680 D:\code\latest_code\implementation_running\final_code_nexys\final_code_nexys\final_code_nexys.xpr
+# Log file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/vivado.log
+# Journal file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys\vivado.jou
+#----------------------------------------------------------ststart_guopopen_project D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.xpININFO: [Project 1-313] Project file moved from 'D:/code/latest_code/final_code_nexys/final_code_nexys' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/DS_LAB/Vivado/2019.2/data/ip'open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 906.160 ; gain = 273.707
+update_compile_order -fileset sources_1
+ereset_run Bram_mem_blk_mem_gen_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Sun Nov 20 20:55:20 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Sun Nov 20 20:55:20 2022] Launched synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 991.137 ; gain = 5.477
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Sun Nov 20 20:57:03 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+[Sun Nov 20 20:57:03 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP Bram_mem_blk_mem_gen_0_0, cache-ID = 55d4c019b47f661f; cache size = 0.783 MB.
+[Sun Nov 20 20:59:48 2022] Launched Bram_mem_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+Bram_mem_blk_mem_gen_0_0_synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/Bram_mem_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/runme.log
+[Sun Nov 20 20:59:49 2022] Launched impl_1...
+Run output will be captured here: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/impl_1/runme.log
+open_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 21 07:04:33 2022...

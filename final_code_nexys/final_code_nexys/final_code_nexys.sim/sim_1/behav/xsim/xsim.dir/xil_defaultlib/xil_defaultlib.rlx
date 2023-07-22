@@ -1,0 +1,14 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/code/latest_code/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_gb.v,1668775314,verilog,,D:/code/latest_code/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v,,conv_gb,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/ip/Bram_mem_blk_mem_gen_0_0/sim/Bram_mem_blk_mem_gen_0_0.v,1668776772,verilog,,D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/sim/Bram_mem.v,,Bram_mem_blk_mem_gen_0_0,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.ip_user_files/bd/Bram_mem/sim/Bram_mem.v,1668776772,verilog,,D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v,,Bram_mem,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+,,,,,,test_sobel,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/testbench.v,1669016767,verilog,,,,testbench,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v,1668776712,verilog,,D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v,,Bram_mem_wrapper,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v,1669017419,verilog,,D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_sobel.v,,UART_TX,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_sobel.v,1669020731,verilog,,D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/test_sobel.v,,conv_sobel,,,,,,,,
+D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v,1669016767,verilog,,D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/testbench.v,,image_top_bram,,,,,,,,

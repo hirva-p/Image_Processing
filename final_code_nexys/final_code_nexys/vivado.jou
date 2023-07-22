@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jul 16 18:30:28 2023
+# Process ID: 14596
+# Current directory: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13272 D:\code\latest_code\implementation_running\final_code_nexys\final_code_nexys\final_code_nexys.xpr
+# Log file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/vivado.log
+# Journal file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.xpr
+uupdate_compile_order -fileset sources_1

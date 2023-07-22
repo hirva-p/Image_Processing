@@ -1,0 +1,95 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x32107A10C778715B",
+      "device": "xc7a100tcsg324-1",
+      "name": "Bram_mem",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "blk_mem_gen_0": ""
+    },
+    "interface_ports": {
+      "BRAM_PORTA_0": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:bram_rtl:1.0",
+        "parameters": {
+          "MEM_SIZE": {
+            "value": "8192",
+            "value_src": "default"
+          },
+          "MEM_WIDTH": {
+            "value": "32",
+            "value_src": "default"
+          },
+          "MEM_ECC": {
+            "value": "NONE",
+            "value_src": "default"
+          },
+          "MASTER_TYPE": {
+            "value": "OTHER",
+            "value_src": "default"
+          },
+          "READ_LATENCY": {
+            "value": "1",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "blk_mem_gen_0": {
+        "vlnv": "xilinx.com:ip:blk_mem_gen:8.4",
+        "xci_name": "Bram_mem_blk_mem_gen_0_0",
+        "parameters": {
+          "Byte_Size": {
+            "value": "8"
+          },
+          "Coe_File": {
+            "value": "../../../../../../design_1_blk_mem_gen_0_0.coe"
+          },
+          "Enable_32bit_Address": {
+            "value": "false"
+          },
+          "Load_Init_File": {
+            "value": "true"
+          },
+          "Operating_Mode_A": {
+            "value": "READ_FIRST"
+          },
+          "Read_Width_A": {
+            "value": "8"
+          },
+          "Register_PortA_Output_of_Memory_Primitives": {
+            "value": "false"
+          },
+          "Use_Byte_Write_Enable": {
+            "value": "true"
+          },
+          "Use_RSTA_Pin": {
+            "value": "false"
+          },
+          "Write_Depth_A": {
+            "value": "50268"
+          },
+          "Write_Width_A": {
+            "value": "8"
+          },
+          "use_bram_block": {
+            "value": "Stand_Alone"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "BRAM_PORTA_0_1": {
+        "interface_ports": [
+          "BRAM_PORTA_0",
+          "blk_mem_gen_0/BRAM_PORTA"
+        ]
+      }
+    }
+  }
+}

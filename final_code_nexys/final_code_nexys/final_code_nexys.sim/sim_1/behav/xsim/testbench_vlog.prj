@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../final_code_nexys.ip_user_files/bd/Bram_mem/ip/Bram_mem_blk_mem_gen_0_0/sim/Bram_mem_blk_mem_gen_0_0.v" \
+"../../../../final_code_nexys.ip_user_files/bd/Bram_mem/sim/Bram_mem.v" \
+"../../../../final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v" \
+"../../../../final_code_nexys.srcs/sources_1/new/UART_TX.v" \
+"../../../../final_code_nexys.srcs/sources_1/new/conv_sobel.v" \
+"../../../../final_code_nexys.srcs/sources_1/new/image_top_bram.v" \
+"../../../../final_code_nexys.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

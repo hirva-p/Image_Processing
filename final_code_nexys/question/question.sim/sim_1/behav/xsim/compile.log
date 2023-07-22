@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/question/question.srcs/sources_1/new/gray_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gray_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/question/question.srcs/sources_1/new/jk_flipflop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jk_flipflop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/code/latest_code/implementation_running/final_code_nexys/question/question.srcs/sim_1/new/testBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testBench

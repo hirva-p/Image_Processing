@@ -1,0 +1,15 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/DS_LAB/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto b91ac9b6426c49e8b380e436f3df82ba --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_sobel_behav xil_defaultlib.test_sobel xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 72 for port 'i_pixel_data' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sim_1/new/test_sobel.v:33]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.conv_sobel
+Compiling module xil_defaultlib.test_sobel
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_sobel_behav

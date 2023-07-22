@@ -1,0 +1,477 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 23 16:57:00 2022
+# Process ID: 6096
+# Current directory: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1
+# Command line: vivado.exe -log image_top_bram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source image_top_bram.tcl
+# Log file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/image_top_bram.vds
+# Journal file: D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source image_top_bram.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/DS_LAB/Vivado/2019.2/data/ip'.
+Command: synth_design -top image_top_bram -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11788 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1006.344 ; gain = 235.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'image_top_bram' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:23]
+	Parameter n bound to: 50268 - type: integer 
+	Parameter width bound to: 236 - type: integer 
+	Parameter height bound to: 213 - type: integer 
+	Parameter idle bound to: 3'b000 
+	Parameter loading bound to: 3'b001 
+	Parameter processed bound to: 3'b010 
+	Parameter transmission bound to: 3'b011 
+	Parameter end_state bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'conv_gb' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_gb.v:23]
+WARNING: [Synth 8-6090] variable 'o_convolved_data_valid' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_gb.v:106]
+WARNING: [Synth 8-6014] Unused sequential element sum_data_reg was removed.  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_gb.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'conv_gb' (1#1) [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/conv_gb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:23]
+	Parameter CLKS_PER_BIT bound to: 10417 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter TX_START_BIT bound to: 2'b01 
+	Parameter TX_DATA_BITS bound to: 2'b10 
+	Parameter TX_STOP_BIT bound to: 2'b11 
+WARNING: [Synth 8-5788] Register o_TX_Done_reg in module UART_TX is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:58]
+WARNING: [Synth 8-5788] Register o_TX_Serial_reg in module UART_TX is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:62]
+WARNING: [Synth 8-5788] Register r_Clock_Count_reg in module UART_TX is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:63]
+WARNING: [Synth 8-5788] Register r_Bit_Index_reg in module UART_TX is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:64]
+WARNING: [Synth 8-5788] Register o_TX_Active_reg in module UART_TX is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:68]
+WARNING: [Synth 8-5788] Register r_TX_Data_reg in module UART_TX is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (2#1) [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/UART_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bram_mem_wrapper' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'Bram_mem' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/bd/Bram_mem/synth/Bram_mem.v:13]
+INFO: [Synth 8-6157] synthesizing module 'Bram_mem_blk_mem_gen_0_0' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/.Xil/Vivado-6096-Hirva/realtime/Bram_mem_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Bram_mem_blk_mem_gen_0_0' (3#1) [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/.Xil/Vivado-6096-Hirva/realtime/Bram_mem_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Bram_mem' (4#1) [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/bd/Bram_mem/synth/Bram_mem.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'Bram_mem_wrapper' (5#1) [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/imports/hdl/Bram_mem_wrapper.v:12]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:74]
+WARNING: [Synth 8-6090] variable 'i_pixel_data_valid' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:86]
+WARNING: [Synth 8-6090] variable 'i_pixel_data_valid' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:101]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'image_top_bram' (6#1) [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:23]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[67]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[66]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[65]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[64]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[58]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[57]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[56]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[51]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[50]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[49]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[48]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[42]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[41]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[40]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[33]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[32]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[26]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[25]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[24]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[19]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[18]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[17]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[16]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[10]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[9]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[8]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[3]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[2]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[1]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1080.949 ; gain = 309.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1080.949 ; gain = 309.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1080.949 ; gain = 309.613
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1080.949 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/bd/Bram_mem/ip/Bram_mem_blk_mem_gen_0_0/Bram_mem_blk_mem_gen_0_0/Bram_mem_blk_mem_gen_0_0_in_context.xdc] for cell 'bram1/Bram_mem_i/blk_mem_gen_0'
+Finished Parsing XDC File [d:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/bd/Bram_mem/ip/Bram_mem_blk_mem_gen_0_0/Bram_mem_blk_mem_gen_0_0/Bram_mem_blk_mem_gen_0_0_in_context.xdc] for cell 'bram1/Bram_mem_i/blk_mem_gen_0'
+Parsing XDC File [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/constrs_1/new/constraint1.xdc]
+Finished Parsing XDC File [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/constrs_1/new/constraint1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/constrs_1/new/constraint1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/image_top_bram_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/image_top_bram_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1175.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1175.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for bram1/Bram_mem_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for bram1/Bram_mem_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_TX'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:103]
+INFO: [Synth 8-5545] ROM "add" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+            TX_START_BIT |                               01 |                              001
+            TX_DATA_BITS |                               10 |                              010
+             TX_STOP_BIT |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input     14 Bit       Adders := 1     
+	   9 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               72 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 12    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input     72 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     15 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 18    
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 7     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module image_top_bram 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 8     
++---Registers : 
+	               72 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   6 Input     72 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 7     
+	  15 Input      1 Bit        Muxes := 1     
+Module conv_gb 
+Detailed RTL Component Info : 
++---Adders : 
+	   9 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 10    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 1     
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     15 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'count_reg[31:0]' into 'count_reg[31:0]' [D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.srcs/sources_1/new/image_top_bram.v:60]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[67]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[66]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[65]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[64]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[58]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[57]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[56]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[51]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[50]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[49]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[48]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[42]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[41]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[40]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[33]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[32]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[26]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[25]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[24]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[19]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[18]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[17]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[16]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[10]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[9]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[8]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[3]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[2]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[1]
+WARNING: [Synth 8-3331] design conv_gb has unconnected port i_pixel_data[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\conv/shifted_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\transmit/r_Clock_Count_reg[14] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1175.699 ; gain = 404.363
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1185.281 ; gain = 413.945
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |Bram_mem_blk_mem_gen_0_0 |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |Bram_mem_blk_mem_gen_0_0 |     1|
+|2     |BUFG                     |     1|
+|3     |CARRY4                   |   122|
+|4     |LUT1                     |    69|
+|5     |LUT2                     |    37|
+|6     |LUT3                     |   166|
+|7     |LUT4                     |    78|
+|8     |LUT5                     |    93|
+|9     |LUT6                     |   239|
+|10    |FDCE                     |     2|
+|11    |FDPE                     |     1|
+|12    |FDRE                     |   217|
+|13    |IBUF                     |     2|
+|14    |OBUF                     |     2|
++------+-------------------------+------+
+
+Report Instance Areas: 
++------+---------------+-----------------+------+
+|      |Instance       |Module           |Cells |
++------+---------------+-----------------+------+
+|1     |top            |                 |  1037|
+|2     |  bram1        |Bram_mem_wrapper |    21|
+|3     |    Bram_mem_i |Bram_mem         |     8|
+|4     |  conv         |conv_gb          |   154|
+|5     |  transmit     |UART_TX          |    53|
++------+---------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1191.117 ; gain = 419.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1191.117 ; gain = 325.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1191.117 ; gain = 419.781
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1203.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1203.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:59 . Memory (MB): peak = 1203.148 ; gain = 714.496
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1203.148 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/code/latest_code/implementation_running/final_code_nexys/final_code_nexys/final_code_nexys.runs/synth_1/image_top_bram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file image_top_bram_utilization_synth.rpt -pb image_top_bram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 16:58:09 2022...
